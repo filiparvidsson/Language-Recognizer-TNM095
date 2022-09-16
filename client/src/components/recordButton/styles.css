@@ -1,0 +1,26 @@
+.container {
+  margin: 100px;
+}
+
+.recordButton {
+  margin: 0 50%;
+  background-color: #f68080;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+   /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    font-weight: bolder;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(to right, #f9b16e 0%, #f68080 51%, #f9b16e 100%);
+   }
+
+.recordButton:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+

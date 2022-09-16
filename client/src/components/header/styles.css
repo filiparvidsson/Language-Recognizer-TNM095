@@ -1,0 +1,25 @@
+/*A header div covering the top of the page and sticks to the screen with blue background
+pushing the rest of the page down and all capital letters*/
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #f68080;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+/* limit the size of img*/
+img {
+    max-width: 7%;
+    max-height: 7%;
+    margin: 0%;
+}
+

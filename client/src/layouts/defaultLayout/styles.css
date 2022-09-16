@@ -1,0 +1,8 @@
+/*Background div behind the page with a gradient color*/
+.main {
+    background: linear-gradient(to bottom, #fbd07c 0%, #f7f779 100%);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}

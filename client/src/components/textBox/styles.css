@@ -1,0 +1,25 @@
+/* class textBox were only h1 and h2 has size 16 and are blue*/
+.textBox {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 40rem;
+    margin: 0 auto;
+    
+}
+
+.textBox h1 {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0;
+    
+}
+
+.textBox p {
+    font-size: 16px;
+    color: #f68080;
+    font-weight: 600;
+}

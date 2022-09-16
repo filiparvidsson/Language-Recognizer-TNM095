@@ -1,0 +1,16 @@
+html{
+    font-size: 10px;
+}
+
+body, html{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+  }
+
+  html,
+  body,
+  #root,
+  .App,
+  .fullHeight{
+      height: 100%;
+  }
