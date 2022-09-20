@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 // import styles
 import "./styles.css";
@@ -10,6 +10,18 @@ import TextBox from "../../components/textBox";
 
 // create a component named homepage
 const Homepage = () => {
+
+    const [data, setData] = useState([{}]);
+
+    useEffect(() => {
+        fetch("/members")
+            .then((res) => res.json())
+            .then((data) => {
+                setData(data)
+                console.log(data)
+            });
+    }, []);
+
     return (
         <div className="homepage">
         <TextBox></TextBox>
