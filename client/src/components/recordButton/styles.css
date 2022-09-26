@@ -5,6 +5,7 @@
 .recordButton {
   margin: 0 50%;
   background-color: #f68080;
+  cursor: pointer;
     padding: 30px;
     text-align: center;
     text-transform: uppercase;
