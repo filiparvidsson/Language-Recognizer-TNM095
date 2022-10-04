@@ -4,10 +4,10 @@ import React from "react";
 import "./styles.css";
 
 // create a component named RecordButton using hocs
-const RecordButton = ({ isRecording, onClick }) => {
+const RecordButton = ({ isRecording }) => {
     return (
 
-        <button className="recordButton" onClick={onClick}>
+        <button className="recordButton">
             {isRecording ? "Stop" : "Record"}
         </button>
 
