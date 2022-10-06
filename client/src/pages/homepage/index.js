@@ -42,6 +42,7 @@ const Homepage = () => {
         <TextBox></TextBox>
         <button onClick={() => start()}> Start</button>
         <button onClick={() => stop()}> Stop </button>
+        <img id="image" src="" alt="image" />
         
         {data ? <AudioPlayer blob={data} /> : null}
         </div>
