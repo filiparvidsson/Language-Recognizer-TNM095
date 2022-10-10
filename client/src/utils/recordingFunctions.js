@@ -32,6 +32,7 @@ export const stopRecording = (recorder, setBlob, setBuffer = null) => {
             //const blobURL = URL.createObjectURL(blob);
             console.log("recording stopped");
             setBlob(blob);
+
             if (setBuffer != null) {
                 //console.log('hi');
                 setBuffer(buffer);

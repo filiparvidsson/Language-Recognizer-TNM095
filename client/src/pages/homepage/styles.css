@@ -1,0 +1,17 @@
+.homepage {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.predictLanguage {
+    margin: 1rem;
+}
+
+#prediction {
+margin: 0 20%;
+font-size: 40px;
+color: #80b1f6;
+font-weight: 600;
+font-family: 'Montserrat', sans-serif;
+    
+}

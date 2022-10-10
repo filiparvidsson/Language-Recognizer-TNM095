@@ -1,0 +1,33 @@
+/*Make changes to recordButton inside class evaluate*/
+
+
+
+.evaluate .recordButton {
+    margin: 0% 34%;
+    background-color: #f68080;
+      font-size: 25px;
+      background-image: linear-gradient(to right, #60efff 0%, #0061ff 51%, #60efff 100%);
+     }
+
+     /*edit the audio html tag*/
+
+        audio {
+          display: block;
+            margin: 0 auto;
+            width: 40%;
+            
+
+        }
+
+     audio::-webkit-media-controls-panel {
+        background-color: #1a020200;
+        border-radius: 0%;
+      }
+      
+      audio::-webkit-media-controls-timeline {
+        background-color: #ffffff;
+        border-radius: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      
