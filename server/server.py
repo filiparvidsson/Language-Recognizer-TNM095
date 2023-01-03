@@ -25,9 +25,9 @@ image_height = 128
 train = 'train'
 test = 'test'
 
-eng = 'english'
-ger = 'german'
-swe = 'swedish'
+eng = 'English'
+ger = 'German'
+swe = 'Swedish'
 
 languages = [eng, ger, swe]
 
@@ -70,7 +70,7 @@ def spectrogram(audio_segment):
 
     return image_np_scaled[:, 0:image_width]
 
-# member route
+# member route for testing server connection
 @app.route("/members")
 def members():
     try:
@@ -102,7 +102,7 @@ def audio():
 
         img = np.reshape(spectro, (1, image_height, image_width, 1))
 
-        img = np.array(img) / 255.0
+        img = np.array(img)
         img = np.expand_dims(img, axis=2)
 
         img = tf.keras.preprocessing.image.img_to_array(img)
@@ -115,7 +115,7 @@ def audio():
     
         
         # send image file from the image folder back to client
-        return {"Prediction": [languages[np.argmax(prediction)]]}
+        return {"Prediction": [languages[np.argmax(prediction)], str(np.max(prediction))]}
     except Exception as e:
         return {"error": str(e)}
 

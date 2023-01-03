@@ -9,7 +9,8 @@ import "./styles.css";
 const DefaultLayout = props => {
     return (
         <div>
-            <Header />
+            {/* Header component with the title as props */}
+            <Header title="Language Recognizer" />
             <div className="main">
                 {props.children}
             </div>

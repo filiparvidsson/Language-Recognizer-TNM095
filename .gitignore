@@ -152,3 +152,10 @@ htmlcov/
 .coverage
 .coverage.*
 *,cover
+
+# all data files
+*.png
+*.jpg
+*.jpeg
+*.mp3
+*.wav

@@ -58,7 +58,7 @@ const Homepage = () => {
         
         <div className="predictLanguage"></div>
         {data ? <AudioPlayer blob={data} /> : null}
-        <h3 id="prediction">Let us predict your language</h3>
+        <h3 id="prediction">...</h3>
         </div>
     );
 }

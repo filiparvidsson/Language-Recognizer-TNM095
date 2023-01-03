@@ -27,7 +27,10 @@ const AudioPlayer = ({blob}) => {
     }
     catch (err) {
         return (
-            console.log(err)
+            <div>
+                <p>Recording in progress...</p>
+            </div>
+            
         );
     }
     

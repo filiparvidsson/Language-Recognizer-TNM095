@@ -51,7 +51,7 @@ const Evaluate = () => {
                     res => {
                         console.log(res.data.Prediction[0]);
                         const text = document.getElementById("prediction");
-                        text.innerHTML = res.data.Prediction[0];
+                        text.innerHTML = "I believe you are talking " + res.data.Prediction[0] + " with " + res.data.Prediction[1] + "% certainty.";;
                         
                     }
                 )
@@ -59,20 +59,7 @@ const Evaluate = () => {
             }
         );
 
-        // const formData = new FormData();
-        // formData.append("audio", audio, "audio.mp3");
-        // formData.append("audioName", "Kaya");
 
-        // console.log(audio);
-        // axios.post("http://localhost:5000/evaluate", formData).then(
-        //     res => {
-        //         // get the image from the server and show it
-        //         const image = document.getElementById("image");
-        //         image.src = res.data;
-
-        //         console.log(res.data);
-        //     }
-        // )
     }
 
 
